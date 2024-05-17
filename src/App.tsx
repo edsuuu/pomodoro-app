@@ -5,9 +5,9 @@ import { PomodoroTimer } from './components/pomodoro-timer';
 
 function App(): JSX.Element {
   return (
-    <div className="App">
-      <h1>hello</h1>
-      <PomodoroTimer defaultPomodoroTime={3600}/>
+    <div className="container">
+      <h1>PomoFocus</h1>
+      <PomodoroTimer pomodoroTime={1500} shortRestTime={300} longRestTime={900} cycles={4}/>
     </div>
   );
 }
