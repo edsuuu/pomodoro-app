@@ -5,14 +5,14 @@ import { Timer } from './timer';
 import { secondsToTime } from '../utils/seconds-to-time';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const start = require('../sounds/so-quer-mamao-so-quer-mel.mp3');
+const start = require('../sounds/among-us-roundstart.mp3');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const pause = require('../sounds/acabou.mp3');
+const pause = require('../sounds/fortnite.mp3');
 
 const audioStartWorking = new Audio(start);
-audioStartWorking.volume = 0.2;
+audioStartWorking.volume = 0.3;
 const audioStopWorking = new Audio(pause);
-audioStopWorking.volume = 0.2;
+audioStopWorking.volume = 0.3;
 
 interface Props {
     pomodoroTime: number;
